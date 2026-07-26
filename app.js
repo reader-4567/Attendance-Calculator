@@ -36,7 +36,6 @@ Back.addEventListener("click",function() {
     Main.classList.remove("hide");
     Result.classList.add("hide");
     Back.classList.add("hide");
-calculate.classList.remove("hide");
     Result.innerHTML = "";
     Total.value = "";
     Present.value = "";
