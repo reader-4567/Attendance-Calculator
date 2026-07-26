@@ -150,4 +150,8 @@ button:hover {
        text-align: center;
        font-size: 1rem;
      }
+
+    .back {
+      width: 6%;
+     }
 }
