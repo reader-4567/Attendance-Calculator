@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'TW Cen MT';
+    margin-top: 4%;
+    text-shadow: 2px 1px 1px gray;
+    text-decoration: underline;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(67, 6, 44);
+    color: rgb(127, 219, 7);
+}
+
+input {
+    color: rgb(5, 56, 56);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+.calculation {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 25%;
+    justify-self: center;
+    margin-top: 50px;
+    padding: 17px;
+    border-radius: 2%;
+    background-color: rgb(67, 6, 44);
+}
+
+.calculation>button {
+    width: 35%;
+    align-self: center;
+    color: cornflowerblue;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    box-shadow: 1.1px 1.5px 1px rgb(68, 71, 63);
+    border: 1.5px solid black;
+}
+
+button:hover {
+    background-color: rgb(48, 39, 29);
+    cursor: pointer;
+}
+
+#total,
+#present {
+    width: 67%;
+    border-color: aquamarine;
+    background-color: aliceblue;
+    border-radius: 7px;
+}
+
+.hide {
+    display: none;
+}
+
+.hero {
+    color: red;
+    font-family: 'TW Cen MT';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-15px);
+    }
+
+    40% {
+        transform: translateX(15px);
+    }
+
+    60% {
+        transform: translateX(-15px);
+    }
+
+    80% {
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.shake {
+    animation: shake 0.4s;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    color: rgb(11, 255, 11);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.back>button {
+    display: flex;
+    width: 7%;
+    border: 1px solid black;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    font-family: 'TW Cen MT';
+    font-weight: bolder;
+    margin-top: 15px;
+    border-radius: 7%;
+    background-color: antiquewhite;
+    color: cornflowerblue;
+}
+
+.back>button:hover {
+    background-color: rgb(48, 39, 29);
+    cursor: pointer;
+}
+
+@media screen and (max-width : 600px) {
+    .calculation { 
+    width: 35%;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
