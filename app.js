@@ -11,6 +11,7 @@ btn.addEventListener("click", function() {
     const PresentV = Number(Present.value);
 
     const Percentage = (PresentV/TotalV)*100;
+    const rounds = round(Percentage,2);
     const needed = Math.ceil((0.75 * TotalV - PresentV) / 0.25);
 
 
@@ -20,12 +21,12 @@ btn.addEventListener("click", function() {
         Result.classList.remove("result");
         calculate.classList.add("shake");
     } else if(Percentage < 75) {
-         Result.innerHTML = `<h4>Your Attendance Percentage is : ${Percentage}%</h4><br><br><p style = "font-Weight : bolder; color : red";> You need to Attend ${needed} more Classes`;
+         Result.innerHTML = `<h4>Your Attendance Percentage is : ${rounds}%</h4><br><br><p style = "font-Weight : bolder; color : red";> You need to Attend ${needed} more Classes`;
          Main.classList.add("hide");
          Back.classList.remove("hide");
     } else {
         calculate.classList.add("hide");
-         Result.innerText = `Your Attendance Percentage is ${Percentage}%`;
+         Result.innerText = `Your Attendance Percentage is ${rounds}%`;
          Main.classList.add("hide");
          Back.classList.remove("hide");
     }
