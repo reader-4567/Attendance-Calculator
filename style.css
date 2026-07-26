@@ -140,15 +140,8 @@ button:hover {
     cursor: pointer;
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 830px) {
     .calculation { 
     width: 35%;
-    }
-
-    .main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
