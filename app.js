@@ -11,7 +11,7 @@ btn.addEventListener("click", function() {
     const PresentV = Number(Present.value);
 
     const Percentage = (PresentV/TotalV)*100;
-    const rounds = Math.round(Percentage,2);
+    const rounds = Percentage.toFixed(2);
     const needed = Math.ceil((0.75 * TotalV - PresentV) / 0.25);
 
 
