@@ -142,7 +142,6 @@ button:hover {
 
 @media screen and (min-width : 320px) and (max-width : 600px){
     .calculation { 
-    width: 50%;
-        max-width: 450px;
+    width: 20%;
     }
 }
